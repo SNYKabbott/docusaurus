@@ -5,6 +5,12 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "stylelint": "^13.2.1"
-  }
+    "stylelint": "^13.2.1",
+    "@snyk/protect": "latest"
+  },
+  "scripts": {
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
