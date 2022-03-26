@@ -7,7 +7,9 @@
     "access": "public"
   },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "license": "MIT",
   "dependencies": {
@@ -27,7 +29,8 @@
     "remark-emoji": "^2.1.0",
     "stringify-object": "^3.3.0",
     "unist-util-visit": "^2.0.2",
-    "url-loader": "^4.1.0"
+    "url-loader": "^4.1.0",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@docusaurus/types": "2.0.0-alpha.64",
@@ -39,5 +42,6 @@
   },
   "engines": {
     "node": ">=10.15.1"
-  }
+  },
+  "snyk": true
 }
