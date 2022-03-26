@@ -24,7 +24,9 @@
   },
   "scripts": {
     "build": "tsc && tsc -p tsconfig.client.json && node copyUntypedFiles.js",
-    "watch": "node copyUntypedFiles.js && concurrently -n \"server,client\" --kill-others \"tsc --watch\" \"tsc -p tsconfig.client.json --watch\""
+    "watch": "node copyUntypedFiles.js && concurrently -n \"server,client\" --kill-others \"tsc --watch\" \"tsc -p tsconfig.client.json --watch\"",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "bugs": {
     "url": "https://github.com/facebook/docusaurus/issues"
@@ -75,7 +77,7 @@
     "inquirer": "^7.2.0",
     "is-root": "^2.1.0",
     "leven": "^3.1.0",
-    "lodash": "^4.5.2",
+    "lodash": "^4.17.20",
     "lodash.flatmap": "^4.5.0",
     "lodash.has": "^4.5.2",
     "lodash.isplainobject": "^4.0.6",
@@ -107,7 +109,8 @@
     "webpack-bundle-analyzer": "^3.6.1",
     "webpack-dev-server": "^3.11.0",
     "webpack-merge": "^4.2.2",
-    "webpackbar": "^4.0.0"
+    "webpackbar": "^4.0.0",
+    "@snyk/protect": "latest"
   },
   "peerDependencies": {
     "react": "^16.8.4",
@@ -115,5 +118,6 @@
   },
   "engines": {
     "node": ">=10.15.1"
-  }
+  },
+  "snyk": true
 }
