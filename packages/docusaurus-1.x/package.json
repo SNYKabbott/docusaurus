@@ -33,7 +33,7 @@
     "@babel/preset-env": "^7.9.0",
     "@babel/preset-react": "^7.9.4",
     "@babel/register": "^7.9.0",
-    "@babel/traverse": "^7.9.0",
+    "@babel/traverse": "^7.23.2",
     "@babel/types": "^7.9.0",
     "autoprefixer": "^9.7.5",
     "babylon": "^6.18.0",
