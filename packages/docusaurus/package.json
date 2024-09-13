@@ -56,7 +56,7 @@
     "boxen": "^4.2.0",
     "cache-loader": "^4.1.0",
     "chalk": "^3.0.0",
-    "chokidar": "^3.3.0",
+    "chokidar": "^4.0.0",
     "commander": "^4.0.1",
     "copy-webpack-plugin": "^6.0.3",
     "core-js": "^2.6.5",
