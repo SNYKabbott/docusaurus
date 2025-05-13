@@ -14,7 +14,7 @@
     "classnames": "^2.2.6",
     "clsx": "^1.1.1",
     "prism-react-renderer": "^1.1.0",
-    "reactstrap": "^8.4.1"
+    "reactstrap": "^9.0.0"
   },
   "peerDependencies": {
     "react": "^16.8.4",
